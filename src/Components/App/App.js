@@ -5,13 +5,10 @@ import { Routes, Route } from 'react-router-dom';
 import About from '../About/About';
 
 function App() {
-  
-
-
   return (
     <main>
-      <Welcome />
-      {/* <Nav /> */}
+      <Welcome path="/" />
+      <Nav />
       <Routes>
         <Route path="/about" element={<About />} />
       </Routes>

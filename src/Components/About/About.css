@@ -1,0 +1,16 @@
+.about-container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-info {
+  width: 50vw;
+  margin-right: 1.75em;
+}
+
+.headshot {
+  height: 75vh;
+}

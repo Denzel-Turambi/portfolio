@@ -1,0 +1,22 @@
+.welcome-info {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-title {
+  font-size: 8em;
+  font-family: 'Comfortaa', cursive;
+}
+
+.go-btn {
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: white;
+  padding: 16px 48px 16px 48px;
+  border: 2px solid;
+  border-radius: 30px;
+}

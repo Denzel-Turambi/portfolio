@@ -1,19 +1,23 @@
 import { NavLink, useLocation } from "react-router-dom";
-
+import './Nav.css';
 const Nav = () => {
   const navLocation = useLocation();
 
   return (
-    <nav>
-    {navLocation.pathname !== '/' && (
-      <div>
-        <h1>Denzel Turambi</h1>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="Art">Art</NavLink>
-        <NavLink to="Contact">Contact</NavLink>
-      </div>
+    <nav className="nav-container">
+      {navLocation.pathname !== '/' && (
+        <div className="nav">
+          <div className="nav-logo">
+            <h1 className="logo-title">denzel turambi</h1>
+          </div>
+          <div className="nav-btn-container">
+            <NavLink to="/" className="nav-btn">Home</NavLink>
+            <NavLink to="/about" className="nav-btn">About</NavLink>
+            <NavLink to="/projects" className="nav-btn">Projects</NavLink>
+            <NavLink to="art" className="nav-btn">Art</NavLink>
+            <NavLink to="contact" className="nav-btn">Contact</NavLink>
+          </div>
+        </div>
       )}
     </nav>
   )

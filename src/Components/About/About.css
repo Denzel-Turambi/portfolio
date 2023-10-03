@@ -9,8 +9,15 @@
 .about-info {
   width: 50vw;
   margin-right: 1.75em;
+  animation: fadeIn 2s;
 }
 
 .headshot {
   height: 75vh;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0};
+  100% {opacity: 1};
 }
